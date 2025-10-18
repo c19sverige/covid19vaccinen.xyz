@@ -1,6 +1,6 @@
 # Officiellt repo för covid19vaccinen.xyz hemsidan
 
-Allt innehåll från tidigare versioner av hemsidan samt allt nytt material finns här, vilket inkluderar - för er som inte vet -  EU-avtalen, EMA:s e-post läcka, Tyskland dokumenten, filmer/videos, med mera.
+Allt innehåll från tidigare versioner av hemsidan samt allt nytt material finns här, vilket inkluderar - för er som inte vet -  EU-avtalen, EMA:s e-post läcka, Tyskland dokumenten, filmer/videos, med mera (alla länkar är inte än tillagda).
 
 Hemsidan är skapad så som den är av en anledning, vilket syftar till att vara så snabb att ladda som möjligt, men också numera att tydligt visa att den är svensk med svenskt innehåll (valet av färger).
 
@@ -18,7 +18,7 @@ För er som vill bidra med något, använd mejlen nedan. Tänk på att inkludera
 
 ## Rättigheter: design och kod
 
-Vem som helst får lov att ladda ner och använda designen (CSS filen `c19xyz.css`) till valfria projekt utan tillstånd eller övriga restriktioner.
+Vem som helst får lov att ladda ner och använda designen (CSS filen `c19xyz.css`) till valfria projekt utan tillstånd eller övriga restriktioner. Dock så är inte detta stylesheet just nu speciellt "bra" eller optimerat eller på något sätt korrekt kodat för tillfället, men allt fungerar.
 
 Hemsidans innehåll får ej användas utan skriftligt tillstånd.
 
