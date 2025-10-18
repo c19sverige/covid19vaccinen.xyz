@@ -4,7 +4,7 @@ Allt innehåll från tidigare versioner av hemsidan samt allt nytt material finn
 
 Utöver detta är grundtanken att skriva och förmedla allt innehåll på ett så enkelt sätt som möjligt samtidigt som säkerhet är av primärt fokus, varav exempelvis alla länkar använder `rel="noopener noreferrer"` och allt material som finns att ladda ner hämtas från världens säkraste molntjänst Proton (för mer info om Proton, gå hit > `https://proton.me`).
 
-Givetvis finns det länkar som pekar på externa källor såsom `Rumble` då YouTube tyvärr censurerar en del / mycket material. För att tydliggöra externa källor används `(ext)` efter länken.
+Givetvis finns det länkar som pekar på externa källor såsom `Rumble` då YouTube tyvärr censurerar en del / mycket material. För att tydliggöra externa källor används `(ext)` efter länken (alla externa länkar ej än uppdaterade).
 
 ## Jag vill bidra med information
 
