@@ -139,66 +139,6 @@ to { transform: rotate(360deg); }
 .dokborta::before{ animation: none; }
 }
 
-#kakor {
-position: fixed;
-bottom: 1rem;
-left: 1rem;
-background-color: #4b61e6;
-color: #fafafa;
-height: 17rem;
-width: 15rem;
-padding: 0.5rem 1rem;
-border-radius: 3px;
-font-size: 1rem;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-box-shadow: 0 0 8px 2px #fafafa;
-}
-
-#kakor a {
-color: #fafafa;
-text-decoration: none;
-padding-bottom: 2px;
-border-bottom: 2px dotted #fafafa;
-}
-
-#kakor a:hover {
-border-bottom: 2px solid #FFF;
-}
-
-#kakor h2 {
-color: #fafafa;
-font-weight: bold;
-margin: 0.3rem 0;
-}
-
-#kakor p {
-margin: 0.3rem 0;
-line-height: 1.5;
-flex-grow: 1;
-}
-
-#kakor button {
-align-self: flex-end;
-margin: 0.3rem 0;
-background-color: #fafafa;
-color: #4b61e6;
-border: 2px solid transparent;
-padding: 0.3rem;
-border-radius: 3px;
-cursor: pointer;
-font-weight: bold;
-font-size: 1rem;
-transition: background-color 0.2s ease, color 0.2s ease;
-}
-#kakor button:hover {
-background-color: #4b61e6;
-color: #fafafa;
-border: 2px solid #fafafa;
-border-radius: 3px;
-}
-
 #donera {
 margin-right: 0.3rem;
 margin-left: 0;
@@ -949,12 +889,6 @@ ingenting om de risker för komplikationer och biverkningar (inklusive allvarlig
 
 </div>
 
-<div id="kakor">
-<h2>Kakor</h2>
-<p>Hemsidan använder <strong>INTE</strong> kakor, tracking eller spårning.</p>
-<button id="kakor-ok">Okej, tack!</button>
-</div>
-
 <footer>
 <div class="footer">
 <div class="footer-column">
@@ -1209,29 +1143,6 @@ linkEl.setAttribute("href", link);
 linkEl.innerText = `Donera ${amountSek} kr i BTC till ${label}`;
 })
 .catch(err => console.error("BTC-kurs gick EJ att hämta:", err));
-
-const kakorDiv = document.getElementById('kakor');
-const kakorButton = document.getElementById('kakor-ok');
-const pTag = kakorDiv.querySelector('p');
-function updateText() {
-const url = window.location.href;
-const subject = encodeURIComponent(`Hittade fel på denna URL: ${url}`);
-const body = encodeURIComponent(`Jag vill anmäla följande fel:\n\nURL: ${url}`);
-const contactLink = `<a href="mailto:covid19vaccinen.sverige@proton.me?subject=${subject}&body=${body}" target="_blank" rel="noopener noreferrer">Rapportera hit</a>`;
-pTag.innerHTML += `<br><br><strong>Hittat ett fel?</strong> ${contactLink}.`;
-}
-function checkKakor() {
-if (localStorage.getItem('kakorAccepted') === 'true') {
-kakorDiv.style.display = 'none';
-} else {
-kakorDiv.style.display = 'flex';
-updateText();
-}}
-kakorButton.addEventListener('click', () => {
-localStorage.setItem('kakorAccepted', 'true');
-kakorDiv.style.display = 'none';
-});
-checkKakor();
 
 window.addEventListener('beforeprint', function() {
 document.querySelectorAll('details').forEach(detail => {
